@@ -116,6 +116,10 @@
         padding: 10px 50px;
         text-align: left;
     }
+    .table1 a{
+        color: rgb(44, 134, 8);
+        text-decoration: none;
+    }
      
     .table1 tr:hover {
         background-color: #aac7a6;
@@ -151,4 +155,9 @@
         border-radius: 4px;
         box-sizing: border-box;
         border-radius: 8%;
+      }
+      .page{
+          margin-bottom: auto;
+          margin-left: 20px;
+          padding-left: 20px;
       }

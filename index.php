@@ -16,11 +16,7 @@
         <li><a href="/rankingsaw">Home</a></li>
         <li><a href="?p=alternatifadd">tambah alternatif</a>
         </li>
-        <li><a href="#">Transaksi</a>
-            <ul>
-                <li><a href="#">Peminjaman</a></li>
-                <li><a href="#">Pengembalian</a></li>
-            </ul>
+        <li><a href="?p=ranking">perengkingan</a>
         </li>
         <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
     </ul>
@@ -39,7 +35,10 @@ if(isset($_GET['p'])){
             break;
         case 'alernatifdel':
             include "alternatifdel.php";
-            break;		
+            break;	
+        case 'ranking':
+            include "ranking.php";
+            break;	    	
         default:
             echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
             break;
