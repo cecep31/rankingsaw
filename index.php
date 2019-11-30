@@ -13,7 +13,7 @@
 
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/rankingsaw">Home</a></li>
         <li><a href="?p=alternatifadd">tambah alternatif</a>
         </li>
         <li><a href="#">Transaksi</a>
@@ -32,7 +32,7 @@ if(isset($_GET['p'])){
 
     switch ($page) {
         case 'alternatifadd':
-            include "alternatifaadd.php";
+            include "alternatifadd.php";
             break;
         case 'alternatifedit':
             include "alternatifedit.php";

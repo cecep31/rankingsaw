@@ -2,7 +2,7 @@
 echo "
 <br>
 <h2 class='h3k'>KRITERIA</h2>";
-echo "<table class='table1'>
+echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
     <th>nama kriteria</th>
