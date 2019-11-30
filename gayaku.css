@@ -1,0 +1,133 @@
+* {margin:0; padding:0;}
+
+    body {
+     background-color:#fff;
+     font-family:Arial, Helvetica, sans-serif;
+     color:#000;
+    }
+
+    nav {
+     margin:auto;
+     text-align: center;
+     width: 100%;
+    } 
+
+    nav ul ul {
+     display: none;
+    }
+
+    nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+    }
+
+    nav ul {
+     background: #429837;
+     padding: 0 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+     width: 100%;
+    }
+
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+
+    nav ul li{
+     float:left;
+    }
+
+    nav ul li:hover{
+     background:#666;
+    }
+
+    nav ul li:hover a{
+     color:#fff;
+    }
+
+    nav ul li a{
+     display: block;
+     padding: 19px;
+     color: #fff;
+     text-decoration: none;
+    }
+
+    nav ul ul{
+     background: #53bd84;
+     border-radius: 0px;
+     padding: 0;
+     position: absolute;
+     top:100%;
+    }
+
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild #53bd84;
+     border-bottom: 1px solid #53bd84;
+     position: relative;
+    }
+
+    nav ul ul li a{
+     padding: 15px 40px;
+     color: #fff;
+    }
+
+    nav ul ul li a:hover{
+     background-color: #666;
+    }
+
+    nav ul ul ul{
+     position: absolute;
+     left: 100%;
+     top: 0;
+    }
+
+
+
+
+
+    .h3k{
+        margin-left: 19%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .table1 {
+        font-family: sans-serif;
+        color: #444;
+        border-collapse: collapse;
+        width: 50%;
+        border: 1px solid #f2f5f7;
+    }
+     
+    .table1 tr th{
+        background: #429837;
+        color: #fff;
+        font-weight: normal;
+    }
+     
+    .table1, th {
+        padding: 8px 20px;
+        text-align: center;
+    }
+    .table1, td{
+        padding: 8px 20px;
+        text-align: left;
+    }
+     
+    .table1 tr:hover {
+        background-color: #f5f5f5;
+    }
+     
+    .table1 tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .total{
+        padding-left: 10px;
+        padding-right:unset ;
+    }
+    .total h3{
+        color: rgb(233, 19, 19);
+    }
