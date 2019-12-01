@@ -73,7 +73,7 @@ echo "<table class='table1' border='1'>
  
   </tr>";
 
-$sqlm = mysqli_query($kon, "select * from tbl_alt");
+$sqlm = mysqli_query($kon, "select * from tbl_alt order by nama");
 $no = 1;
 while($rm = mysqli_fetch_array($sqlm)){
   echo "<tr>
