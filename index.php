@@ -33,14 +33,14 @@ if(isset($_GET['p'])){
         case 'alternatifedit':
             include "alternatifedit.php";
             break;
-        case 'alernatifdel':
+        case 'alternatifdel':
             include "alternatifdel.php";
             break;	
         case 'ranking':
             include "ranking.php";
             break;	    	
         default:
-            echo "<center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
+            echo "<br><center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
             break;
     }
 }else{
