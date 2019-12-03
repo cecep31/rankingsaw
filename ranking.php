@@ -41,10 +41,10 @@ while($rkl = mysqli_fetch_array($sqlakhlak)){
 }
 
 
-echo "<h3>max nilai rapor:</h3> $maxnilai";
-echo "<h3>max piagam     :</h3> $maxpiagam";
-echo "<h3>min ponit      :</h3> $minpoint";
-echo "<h3>max akhlak     :</h3>$maxakhlak";
+// echo "<h3>max nilai rapor:</h3> $maxnilai";
+// echo "<h3>max piagam     :</h3> $maxpiagam";
+// echo "<h3>min ponit      :</h3> $minpoint";
+// echo "<h3>max akhlak     :</h3>$maxakhlak";
 
 
 $sqlm = mysqli_query($kon, "select * from tbl_alt order by nama");
@@ -113,18 +113,43 @@ echo "<br>
  
   </tr>";
 
-$sqlm = mysqli_query($kon, "select * from tbl_normal order by nama");
-$no = 1;
-while($rm = mysqli_fetch_array($sqlm)){
+$sqlnormal = mysqli_query($kon, "select * from tbl_normal order by nama");
+//////
+$sqlc = mysqli_query($kon, "select * from tbl_cadd where idc = '1'");
+while($rmc1 = mysqli_fetch_array($sqlc)){
 
-
-
-   
-    
-    
-
-  $no++;
+    $bobot1 = $rmc1["bobotc"];
 }  
+//
+//////
+$sqlc = mysqli_query($kon, "select * from tbl_cadd where idc = '2'");
+while($rmc1 = mysqli_fetch_array($sqlc)){
+
+    $bobot2 = $rmc1["bobotc"];
+}  
+//
+//////
+$sqlc = mysqli_query($kon, "select * from tbl_cadd where idc = '3'");
+while($rmc1 = mysqli_fetch_array($sqlc)){
+
+    $bobot3 = $rmc1["bobotc"];
+}  
+//
+//////
+$sqlc = mysqli_query($kon, "select * from tbl_cadd where idc = '4'");
+while($rmc1 = mysqli_fetch_array($sqlc)){
+
+    $bobot4 = $rmc1["bobotc"];
+}  
+//
+
+
+$sqlnormal = mysqli_query($kon, "select * from tbl_normal order by nama");
+while($sqlalt = mysqli_fetch_array($sqlnormal)){
+    $v = ($bobot1*$sqlalt["nilai_rapor"])+($bobot2*$sqlalt["piagam"])+($bobot3*$sqlalt["poin_pelanggaran"])+($bobot4*$sqlalt["akhlak"]);
+    echo "$v <br>";
+  }
+  echo "$v";
 echo "</table>";
 
 
