@@ -94,7 +94,7 @@ while($rm = mysqli_fetch_array($sqlm)){
 	   <b>$rm[akhlak]</b>
     </td>
     <td>
-     <a href='?p=alternatifeit&ida=$rm[ida]'>Ubah</a> |
+     <a href='?p=alternatifedit&ida=$rm[ida]'>Ubah</a> |
      <a href='?p=alternatifdel&ida=$rm[ida]'>Hapus</a>
 	</td>
     

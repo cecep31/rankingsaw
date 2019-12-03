@@ -18,7 +18,8 @@
         </li>
         <li><a href="?p=ranking">perengkingan</a>
         </li>
-        <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
+        <li><a href="?p=refresh" style="color: rgb(166, 206, 211);">REFRESH DATA</a></li>
+        <li><a href="?p=refresh" style="color: rgb(166, 206, 211); onClick="return confirm ('Yakin?')">refrseh data</a></li>
     </ul>
 </nav>
 <?php
@@ -38,6 +39,9 @@ if(isset($_GET['p'])){
             break;	
         case 'ranking':
             include "ranking.php";
+            break;	
+        case 'refresh':
+            include "refresh.php";
             break;	    	
         default:
             echo "<br><center><h3>Maaf. Halaman tidak di temukan !</h3></center>";

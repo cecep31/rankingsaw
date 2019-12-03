@@ -149,12 +149,14 @@ while($sqlalt = mysqli_fetch_array($sqlnormal)){
     $v = ($bobot1*$sqlalt["nilai_rapor"])+($bobot2*$sqlalt["piagam"])+($bobot3*$sqlalt["poin_pelanggaran"])+($bobot4*$sqlalt["akhlak"]);
     echo "$v <br>";
   }
-  echo "$v";
+ 
 echo "</table>";
 
 
 
 
 ?>
+
+
 <br>
 <p></p>
