@@ -3,7 +3,8 @@
 
 
 <?php
-
+$sqlalt = mysqli_query($kon, "delete from tbl_normal"); 
+$sqlrank = mysqli_query($kon, "delete from tbl_rank");
 
 
 
@@ -72,7 +73,7 @@ echo "<br>";
 
 /////////////////perengkingan
 echo "<br>
-<h2 class='h3k'>ALTERNATIF</h2>
+<h2 class='h3k'>RANKING</h2>
     <table class='table1' border='1'>
   <tr>
 	  <th>rank</th>
