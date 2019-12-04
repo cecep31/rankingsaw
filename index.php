@@ -18,8 +18,7 @@
         </li>
         <li><a href="?p=ranking">perengkingan</a>
         </li>
-        <li><a href="?p=refresh" style="color: rgb(166, 206, 211);">REFRESH DATA</a></li>
-        <li><a href="?p=refresh" style="color: rgb(166, 206, 211); onClick="return confirm ('Yakin?')">refrseh data</a></li>
+        <li><a href="?p=refresh" style="color: rgb(166, 206, 211);">REFRESH RANKING</a></li>
     </ul>
 </nav>
 <?php

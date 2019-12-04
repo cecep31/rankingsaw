@@ -3,21 +3,8 @@
 
 
 <?php
-echo "
-<br>
-<h2 class='h3k'>normalisasi</h2>";
-echo "<table class='table1' border='1'>
-  <tr>
 
-    <th>nama kriteria</th>
-    <th>nilai_rapor</th>
-    <th>piagam</th>
-    <th>point pelanggaran</th>
-    <th>akhlak</th>
-	
-	
- 
-  </tr>";
+
 
 
 $sqlnilai=mysqli_query($kon, "SELECT max(nilai_rapor) AS max FROM tbl_alt");
@@ -56,24 +43,7 @@ while($rm = mysqli_fetch_array($sqlm)){
    $akhlak = $rm["akhlak"]/$maxakhlak;
     $ida = $rm["ida"];
     $nama = $rm["nama"];
-  echo "<tr>
-  
-    <td>
-	  <b>$rm[nama]</b>
-	</td>
-    <td>
-	  <b>$nilai</b>
-	</td>
-    <td>
-	  $piagam</b>
-    </td>
-    <td>
-        $point</b>
-    </td>
-    <td>
-        $akhlak</b>
-    </td>
-  </tr>";
+
 
     $sqlrangking = mysqli_query($kon, "insert into tbl_normal (ida, nama, nilai_rapor, piagam, poin_pelanggaran, akhlak) values ('$ida','$nama','$nilai','$piagam','$point','$akhlak')");
 
@@ -105,9 +75,10 @@ echo "<br>
 <h2 class='h3k'>ALTERNATIF</h2>
     <table class='table1' border='1'>
   <tr>
-	<th>no</th>
+	  <th>rank</th>
     <th>nama</th>
     <th>total nilai</th>
+ 
 
 	
  
