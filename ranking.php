@@ -68,7 +68,7 @@ echo "<br>";
 	
 	
 // }	
-echo "</div>";
+// echo "</div>";
 
 /////////////////perengkingan
 echo "<br>
@@ -117,10 +117,26 @@ while($rmc1 = mysqli_fetch_array($sqlc)){
 
 $sqlnormal = mysqli_query($kon, "select * from tbl_normal order by nama");
 while($sqlalt = mysqli_fetch_array($sqlnormal)){
+  
+
     $v = ($bobot1*$sqlalt["nilai_rapor"])+($bobot2*$sqlalt["piagam"])+($bobot3*$sqlalt["poin_pelanggaran"])+($bobot4*$sqlalt["akhlak"]);
-    echo "$v <br>";
+    $sqlrangking = mysqli_query($kon, "insert into tbl_rank (nama, v) values ('$sqlalt[nama]','$v')");
+   
+
   }
- 
+ $no = 1;
+$sqlrank = mysqli_query($kon, "select * FROM tbl_rank ORDER BY v DESC"); 
+while($gas = mysqli_fetch_array($sqlrank)){
+  echo"
+  <tr>    
+    <td>$no</td>
+    <td>$gas[nama]</td>
+    <td>$gas[v]</td>
+  </tr>";
+
+  $no++;
+}
+
 echo "</table>";
 
 
