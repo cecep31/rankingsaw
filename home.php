@@ -1,11 +1,11 @@
 
 
 
-
+<center>
 <?php
 echo "
 <br>
-<h2 class='h3k'>KRITERIA</h2>";
+<h2>KRITERIA</h2>";
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
@@ -59,15 +59,15 @@ echo "</div>";
 
 echo "
 <br>
-<h2 class='h3k'>ALTERNATIF</h2>";
+<h2>ALTERNATIF</h2>";
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
     <th>nama</th>
-    <th>nilai rapor</th>
-	<th>piagam</th>
-    <th>point pelanggarn</th>
-    <th>akhlak</th>
+    <th>pengetahuan/wawasan</th>
+	  <th>instalsi jaringan</th>
+    <th>kepribadian</th>
+    <th>agama</th>
     <th>action</th>
 	
  
@@ -107,5 +107,6 @@ echo "</div>";
 
 
 ?>
+</center>
 <br>
 <p></p>

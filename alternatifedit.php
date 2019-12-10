@@ -12,19 +12,19 @@ $rm = mysqli_fetch_array($sqlm);
 				<td width="146"><input type="text" name="nama" id="nama" value="<?php echo "$rm[nama]"; ?>"></td>					
 			</tr>	
 			<tr>
-				<td>nilai rapor</td>
+				<td>pengetahuan/wawasan</td>
 				<td><input type="text" name="nilai" id="nilai" value="<?php echo "$rm[nilai_rapor]"; ?>"></td>					
             </tr>
             <tr>
-				<td>piagam</td>
+				<td>instalasi jaringan</td>
 				<td><input type="text" name="piagam" id="piagam" value="<?php echo "$rm[piagam]"; ?>"></td>					
             </tr>
             <tr>
-				<td>point pelanggaran</td>
+				<td>kepribadian</td>
 				<td><input type="text" name="point" id="point" value="<?php echo "$rm[poin_pelanggaran]"; ?>"></td>					
             </tr>
             <tr>
-				<td>akhlak(rata-rata BK&PAI)</td>
+				<td>pengetahuan agama</td>
 				<td><input type="text" name="akhlak" id="akhlak" value="<?php echo "$rm[akhlak]"; ?>"></td>					
             </tr>
             	

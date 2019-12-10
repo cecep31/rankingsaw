@@ -7,19 +7,19 @@
 				<td width="146"><input type="text" name="nama" id="nama"></td>					
 			</tr>	
 			<tr>
-				<td>nilai rapor</td>
+				<td>pengetahuan/wawasan</td>
 				<td><input type="text" name="nilai" id="nilai"></td>					
             </tr>
             <tr>
-				<td>piagam</td>
+				<td>instalasi jaringan</td>
 				<td><input type="text" name="piagam" id="piagam"></td>					
             </tr>
             <tr>
-				<td>point pelanggaran</td>
+				<td>kepribadian</td>
 				<td><input type="text" name="point" id="point"></td>					
             </tr>
             <tr>
-				<td>akhlak(rata-rata BK&PAI)</td>
+				<td>agama</td>
 				<td><input type="text" name="akhlak" id="akhlak"></td>					
             </tr>
             	

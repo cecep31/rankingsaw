@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ranking siswa terbaik</title>
+    <title>pemilihan kepala unit sistem informasi</title>
     <link rel="stylesheet" href="gayaku.css">
 </head>
 <body>

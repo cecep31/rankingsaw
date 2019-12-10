@@ -1,7 +1,6 @@
 
 
-
-
+<center>
 <?php
 $sqlalt = mysqli_query($kon, "delete from tbl_normal"); 
 $sqlrank = mysqli_query($kon, "delete from tbl_rank");
@@ -10,7 +9,7 @@ $sqlrank = mysqli_query($kon, "delete from tbl_rank");
 
 $sqlnilai=mysqli_query($kon, "SELECT max(nilai_rapor) AS max FROM tbl_alt");
 $sqlpiagam=mysqli_query($kon, "SELECT max(piagam) AS max FROM tbl_alt");
-$sqlpoint=mysqli_query($kon, "SELECT min(poin_pelanggaran) AS min FROM tbl_alt");
+$sqlpoint=mysqli_query($kon, "SELECT max(poin_pelanggaran) AS max FROM tbl_alt");
 $sqlakhlak=mysqli_query($kon, "SELECT max(akhlak) AS max FROM tbl_alt");
 //Looping Untuk menampilkan data (namabarang,jumlah,harga)
 
@@ -22,7 +21,7 @@ while($rkl = mysqli_fetch_array($sqlpiagam)){
 	$maxpiagam = $rkl["max"];	
 }
 while($rkl = mysqli_fetch_array($sqlpoint)){
-	$minpoint = $rkl["min"];	
+	$maxpoint = $rkl["max"];	
 }
 while($rkl = mysqli_fetch_array($sqlakhlak)){
 	$maxakhlak = $rkl["max"];	
@@ -40,7 +39,7 @@ $sqlm = mysqli_query($kon, "select * from tbl_alt order by nama");
 while($rm = mysqli_fetch_array($sqlm)){
    $nilai = $rm["nilai_rapor"]/$maxnilai;
    $piagam = $rm["piagam"]/$maxpiagam;
-   $point = $minpoint/$rm["poin_pelanggaran"];
+   $point = $rm["poin_pelanggaran"]/$maxpoint;
    $akhlak = $rm["akhlak"]/$maxakhlak;
     $ida = $rm["ida"];
     $nama = $rm["nama"];
@@ -73,7 +72,7 @@ echo "<br>";
 
 /////////////////perengkingan
 echo "<br>
-<h2 class='h3k'>RANKING</h2>
+<h2>RANKING</h2><br>
     <table class='table1' border='1'>
   <tr>
 	  <th>rank</th>
@@ -147,4 +146,6 @@ echo "</table>";
 
 
 <br>
+</center>
+
 <p></p>
